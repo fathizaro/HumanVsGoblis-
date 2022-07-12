@@ -94,7 +94,7 @@ public class HumanVsGoblins {
                     // Battle loop
                     while (alive) {
 
-                        /////// HUMAN ATTACKS ////////
+                        // HUMAN ATTACKS //
                         System.out.println(human.attack(human, goblin));
                         if (goblin.health > 0) {
                             System.out.println(human.name + "'s health: " + human.health + "  " + goblin.name + "'s health: " + goblin.health);
@@ -108,7 +108,7 @@ public class HumanVsGoblins {
                                 break;
                             }
 
-                            /////// TREASURE STUFF ///////
+                            // TREASURE STUFF //
                             if (!tempWeapon[0].equals("no weapon")) {
                                 human.removeWeapon(human, tempWeapon);
                             }
@@ -128,7 +128,7 @@ public class HumanVsGoblins {
                         }
 
 
-                        /////// GOBLIN ATTACKS ///////
+                        // GOBLIN ATTACKS //
                         System.out.println(goblin.attack(goblin, human));
                         if (human.health > 0) {
                             System.out.println(human.name + "'s health: " + human.health + "  " + goblin.name + "'s health: " + goblin.health);
